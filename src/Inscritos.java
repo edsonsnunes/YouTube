@@ -1,8 +1,8 @@
-public class Gafanhoto extends Pessoa {
+public class Inscritos extends Pessoa {
     private String login;
     private int totAssitindo;
 
-    public Gafanhoto(String nome, int idade, String sexo, String login) {
+    public Inscritos(String nome, int idade, String sexo, String login) {
         super(nome, idade, sexo);
         this.login = login; 
         this.totAssitindo = 0;
@@ -23,7 +23,7 @@ public class Gafanhoto extends Pessoa {
 
     @Override
     public String toString() {
-        return "Gafanhoto [ "+ super.toString() + " + login=" + login + ", totAssitindo=" + totAssitindo + "]";
+        return "Inscrito [ "+ super.toString() + "  Login: " + login + ", Total Assitindo: " + totAssitindo + "]";
     }
 
    

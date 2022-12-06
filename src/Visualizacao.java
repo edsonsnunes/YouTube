@@ -1,8 +1,8 @@
 public class Visualizacao {
-    private Gafanhoto espectador;
+    private Inscritos espectador;
     private Video filme;
     
-    public Visualizacao(Gafanhoto espectador, Video filme) {
+    public Visualizacao(Inscritos espectador, Video filme) {
         this.espectador = espectador;
         this.filme = filme;
         this.espectador.setTotAssitindo(this.espectador.getTotAssitindo() + 1);
@@ -31,11 +31,11 @@ public class Visualizacao {
         this.filme.setAvaliacao(tot);
     }
 
-    public Gafanhoto getEspectador() {
+    public Inscritos getEspectador() {
         return espectador;
     }
 
-    public void setEspectador(Gafanhoto espectador) {
+    public void setEspectador(Inscritos espectador) {
         this.espectador = espectador;
     }
 
@@ -49,6 +49,6 @@ public class Visualizacao {
 
     @Override
     public String toString() {
-        return "Vizualizacao [espectador=" + espectador + ", filme=" + filme + "]";
+        return "Vizualizacao [Espectador: " + espectador + ", Filme: " + filme + "]";
     } 
 }
