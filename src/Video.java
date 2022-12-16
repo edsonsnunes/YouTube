@@ -27,8 +27,13 @@ public class Video implements AcoesVideo {
 
     public void setAvaliacao(int avaliacao) {
         int nova;
-        nova = ((this.avaliacao + avaliacao) / this.views);
-        this.avaliacao = nova;
+        try{ 
+            if(this.views == 0){
+                nova = ((this.avaliacao + avaliacao) / this.views);
+                this.avaliacao = nova;
+        }} catch(ArithmeticException e){
+           System.out.println("Erro! Impossivel dividir por 0");
+        }
     }
 
     public int getViews() {
